@@ -1097,7 +1097,7 @@ footer section {
 .cem-vh {
     min-height: 100vh;
 }
-.fa-info-circle {
+.div-grid .fa-info-circle {
 display: none;
 position: absolute;
 top: 15px;
