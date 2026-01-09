@@ -578,7 +578,7 @@ cursor: pointer;
 
 #grid-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33.8rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(43.5rem, 1fr));
     gap: 5rem;
     max-width: 150rem;
     margin: 0 auto;
@@ -587,6 +587,7 @@ cursor: pointer;
 }
 
 .div-grid {
+    aspect-ratio: 1 / 1;
     box-shadow: 0 0 0.8rem;
     border-radius: 5%;
     position: relative;
@@ -837,7 +838,7 @@ time {
 
 }
 
-.btn-download-cv button {
+.btn-download-cv a {
     padding: 0.5rem 1rem;
     border-radius: 10rem;
     font-size: 1.5rem;
@@ -845,7 +846,7 @@ time {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.btn-download-cv button:hover {
+.btn-download-cv a:hover {
     background-color: var(--cor-azul);
     color: white;
 }
@@ -1048,7 +1049,7 @@ footer section {
     margin: 1rem 0;
 }
 
-.menu a,
+
 .conectar a {
     display: block;
     margin: 0.5rem 0;
@@ -1089,7 +1090,6 @@ footer section {
         text-align: center;
     }
 
-    .menu,
     .conectar {
         display: none;
     }
