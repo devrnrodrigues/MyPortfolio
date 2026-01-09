@@ -631,14 +631,14 @@ cursor: pointer;
 .titulo-grid {
     display: flex;
     align-items: center;
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
     padding-bottom: 1.2rem;
 }
 
 .titulo-grid i {
+     font-size: 3rem;
     padding-left: 1.2rem;
-    color: var(--cor-azul);
-    ;
+    color: var(--cor-azul); 
 }
 
 .titulo-grid i:first-child {
@@ -646,9 +646,9 @@ cursor: pointer;
 }
 
 .paragrafo-grid {
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
     padding-bottom: 1.2rem;
-
+   max-width: 50rem;
 }
 .deploy-grid {
     font-size: clamp(1rem, 2vw, 1.5rem);
