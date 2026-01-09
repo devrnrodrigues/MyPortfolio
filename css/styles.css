@@ -212,12 +212,12 @@ header {
     justify-content: center;
     margin-top: 6rem;
     height: 40rem;
-
+    overflow: hidden;
 }
 
 .img-inicio img {
+      max-width: 100%;
     border-radius: 50%;
-
 }
 
 .back-end {
