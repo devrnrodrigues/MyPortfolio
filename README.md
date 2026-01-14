@@ -8,42 +8,67 @@ Um projeto web responsivo e organizado onde apresento meus projetos, habilidades
 
 # 🔍 Sobre o projeto
 
- O objetivo deste projeto é compartilhar meu trabalho como desenvolvedor e facilitar o contato com recrutadores e parceiros. Meu foco foi criar um site objetivo, moderno e focado em responsividade.
+O objetivo deste projeto é compartilhar meu trabalho como desenvolvedor e facilitar o contato com recrutadores e parceiros. 
+Busquei criar um site moderno, objetivo e totalmente responsivo.
 
 ## ✨ Funcionalidades
 
-* Página inicial com uma breve apresentação e cards destacando principais habilidades;
+* Modo escuro com persistência da preferência no localStorage;
+* Menu fixo com efeito ao rolar a página;
+* Página inicial com apresentação e cards de habilidades;
 * Sessão de projetos com links para repositórios e deploy;
-* Sessão de experiência organizada em uma linha do tempo;
-* Sobre mim contando um pouco da minha trajetória;
-* Formulário de contato interativo e funcional;
-* Design responsivo para mobile, tablet e desktop.
+* Sessão de experiência organizada em linha do tempo;
+* Seção "Sobre mim" com trajetória profissional;
+* Modais interativos para detalhamento das habilidades;
+* Carrossel infinito de tecnologias;
+* Animações suaves e transições CSS;
+* Formulário de contato funcional;
+* Design responsivo para mobile, tablet e desktop;
 
 ## 🚀 Tecnologias 
 
-Um dos focos desse projeto foi melhorar minhas habilidades e fixar conceitos, então utilizei tecnologias puras, sem uso de frameworks ou bibliotecas. As tecnologias utilizadas foram:
+O projeto foi desenvolvido utilizando HTML, CSS e JavaScript puros, sem frameworks de frontend.
+Foram utilizados apenas serviços e bibliotecas externas via CDN para ícones, fontes e envio de formulário.
+As tecnologias utilizadas foram:
 
 ### Linguagens:
 
-* HTML5;
-* CSS3;
+* HTML;
+* CSS;
 * JavaScript;
+
+### Serviços e recursos externos
+
+* Font Awesome;
+* Devicon;
+* Google Fonts;
+* FormSubmit;
+* Vercel;
 
 ### IDE utilizada:
 
 * Visual Studio Code;
 * Live Server (Extensão);
+  
+## 📚 Aprendizados
+
+* Organização de código HTML semântico;
+* Criação de layouts responsivos com CSS puro;
+* Manipulação do DOM e eventos com JavaScript;
+* Implementação de modo escuro com persistência de estado;
+* Boas práticas de usabilidade e experiência do usuário;
 
  # 📁 Estrutura
 
 /assets  
-  /img           -> Imagens do projeto (projetos, imagem inicial...)  
-  /css           -> Arquivos de estilo (reset e styles)
+  /img           -> Imagens do projeto  
+  /curriculo     -> Currículo em PDF  
 
-/js              -> Scripts JavaScript do site  
-/README.md       -> Documentação do projeto  
-/index.html      -> Página principal do site
-  
+/css             -> Estilos (reset e styles)  
+/js              -> Scripts JavaScript  
+/index.html  
+/README.md
+
 # 🖼️ Prévia 
 
 
@@ -57,10 +82,6 @@ Um dos focos desse projeto foi melhorar minhas habilidades e fixar conceitos, en
 
 Você pode entrar em contato comigo por:
 
-* Email: devrenanrodrigues@gmail.com
-* LinkedIn: https://www.linkedin.com/in/rodrigues0/
-* Whatsapp: (+55) 21 97633-3733
-
-
-  
-
+* ![Email](https://img.icons8.com/ios-filled/24/000000/email.png) Email: devrenanrodrigues@gmail.com
+* ![LinkedIn](https://img.icons8.com/ios-filled/24/0077B5/linkedin.png) [LinkedIn](https://www.linkedin.com/in/devrenanrodrigues/)
+* ![WhatsApp](https://img.icons8.com/ios-filled/24/25D366/whatsapp.png) Whatsapp: (+55) 21 97633-3733
