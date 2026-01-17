@@ -66,16 +66,32 @@ As tecnologias utilizadas foram:
 * Implementação de modo escuro com persistência de estado;
 * Boas práticas de usabilidade e experiência do usuário;
 
- # Estrutura
+ # Estrutura de pastas
+ 
+```
+assets/
+├─ curriculo/
+│ └─ devrenanrodrigues.pdf
+└─ img/
+├─ home.png
+├─ home-mobile.png
+├─ img-inicio.png
+├─ logo.png
+├─ projeto1.jpg
+├─ projeto2.jpg
+├─ projeto3.jpg
+└─ projeto4.jpg
 
-/assets  
-  /img           -> Imagens do projeto  
-  /curriculo     -> Currículo em PDF  
+css/
+├─ reset.css
+└─ styles.css
 
-/css             -> Estilos (reset e styles)  
-/js              -> Scripts JavaScript  
-/index.html  
-/README.md
+js/
+└─ main.js
+
+index.html
+README.md
+```
 
 # Prévia 
 
