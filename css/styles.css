@@ -219,26 +219,16 @@ header {
     box-shadow: 0 0 10px 2px gray;
  background: linear-gradient(to left, var(--cor-azul), #460d0d);
 }
-@keyframes waveGradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 300% 0%; 
-    }
-}
 
 .back-end {
-   background: linear-gradient(90deg, var(--cor-azul), gray, var(--cor-azul), gray, var(--cor-azul));
+   color:var(--cor-azul);
      background-size: 200% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     display: block;
     position: relative;
-        animation: waveGradient 5s linear infinite;
 }
 
 #texto-inicio {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,14 +237,11 @@ header {
 }
 
 #texto-inicio h1 {
+    color: var(--cor-azul);
     font-size: clamp(2.4rem, 12vw, 8rem);
     margin-bottom: 3rem;
     margin-top: 3rem;
-    background: linear-gradient(90deg, var(--cor-azul), gray, var(--cor-azul), gray, var(--cor-azul));
     background-size: 200% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-        animation: waveGradient 5s linear infinite;
 }
 
 
@@ -265,23 +252,56 @@ header {
     padding: 0 0.4rem 0 0.4rem;
 
 }
+#btn-principal {
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
+    margin-top:2rem;
+    border-radius: 1rem;
+}
 
 .btn-padrao {
     font-weight: bold;
     color: white;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    padding: 0.7rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    padding: 1rem;
     border-radius: 10rem;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
-    transition: box-shadow 0.3s ease;
+    background: linear-gradient(
+        270deg,
+        var(--cor-azul),
+        #f86c6c,
+        var(--cor-azul)
+    );
+    background-size: 400% 400%;
+
+    animation: waveGradient 6s ease infinite;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+@keyframes waveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .btn-padrao:hover {
-    box-shadow: 0 0 10px gray;
+    box-shadow: 
+        0 0 5px #5c1f1f,
+        0 0 15px #5c1f1f,
+        0 0 30px #5c1f1f,
+        0 0 60px #5c1f1f;
+    transform: scale(1.05);
 }
 
+
 .social-icon {
-    font-size: 3rem;
+    font-size: 5rem;
     padding: 0.5rem;
     display: inline-block;
 
@@ -999,11 +1019,7 @@ form button:hover {
 .titulo-container-ctt {
     font-size: clamp(2.5rem, 2vw, 4rem);
     margin-bottom: 3rem;
-    background: linear-gradient(90deg, var(--cor-azul), gray, var(--cor-azul), gray, var(--cor-azul));
-    background-size: 200% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: waveGradient 5s linear infinite;
+color: var(--cor-azul);
 }
 
 .infos-container-ctt {
@@ -1055,7 +1071,7 @@ footer section {
 
 .conectar a {
     display: block;
-    margin: 0.5rem 0;
+    margin: 1.5rem 0;
 }
 
 .renan-rodrigues p {
