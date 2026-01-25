@@ -12,9 +12,9 @@
 
 # Prévia 
 
-![Home Desktop](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home.png?raw=true)
+![Home Desktop](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home.webp?raw=true)
 
-![Home Mobile](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home-mobile.png?raw=true) 
+![Home Mobile](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home-mobile.avif?raw=true) 
 
 # Portfólio Pessoal
 
