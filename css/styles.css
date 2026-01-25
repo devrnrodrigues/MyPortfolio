@@ -264,16 +264,16 @@ header {
     font-size: clamp(1.2rem, 2vw, 1.6rem);
     padding: 1rem;
     border-radius: 10rem;
-    background: linear-gradient(
-        270deg,
-        var(--cor-azul),
-        #f86c6c,
-        var(--cor-azul)
-    );
+  background: linear-gradient(
+    270deg,
+    #6f2b2b,
+    #8e3939,
+    #b94a4a,
+    #8e3939,
+    #6f2b2b
+  );
     background-size: 400% 400%;
-
     animation: waveGradient 6s ease infinite;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -301,8 +301,8 @@ header {
 
 
 .social-icon {
-    font-size: 5rem;
-    padding: 0.5rem;
+    font-size: clamp(3rem, 2.5vw, 4rem);
+    padding: 0.3rem;
     display: inline-block;
 
 }
