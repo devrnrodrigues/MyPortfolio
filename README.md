@@ -1,4 +1,4 @@
-<h1 align="center">Renan Rodrigues (Portfólio)</h1>
+<h1 align="center">Renan Rodrigues (Meu Portfólio)</h1>
 
 <p align="center">
   ↓ Acesse o projeto
@@ -12,20 +12,21 @@
 
 # Prévia 
 
-![Home Desktop](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home.png?raw=true)
+![Home Desktop](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home.webp?raw=true)
 
-![Home Mobile](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home-mobile.png?raw=true) 
+![Home Mobile](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home-mobile.avif?raw=true) 
 
-# Portfólio Pessoal
+# O que é o projeto?
 
-Um projeto web responsivo e organizado onde apresento meus projetos, habilidades, experiências e formas de contato.
+Este projeto consiste em um portfólio pessoal desenvolvido como uma landing page moderna, organizada e totalmente responsiva. 
+O site foi criado para apresentar de forma clara meus principais projetos, habilidades técnicas, experiências profissionais e formas de contato, servindo como um cartão de visitas digital.
 
-# Sobre o projeto
+# Motivação
 
-O objetivo deste projeto é compartilhar meu trabalho como desenvolvedor e facilitar o contato com recrutadores e parceiros. 
-Busquei criar um site moderno, objetivo e totalmente responsivo.
+O objetivo deste projeto é compartilhar meu trabalho como desenvolvedor, apresentando minhas habilidades, experiências e projetos de forma clara e acessível, além de facilitar o contato com recrutadores.
+Durante o desenvolvimento, busquei aprimorar meus conhecimentos em desenvolvimento web, fortalecendo a base da programação e aplicando boas práticas de código. O foco foi criar um site moderno, objetivo e totalmente responsivo.
 
-## Funcionalidades
+# Funcionalidades:
 
 * Modo escuro com persistência da preferência no localStorage;
 * Menu fixo com efeito ao rolar a página;
@@ -39,40 +40,7 @@ Busquei criar um site moderno, objetivo e totalmente responsivo.
 * Formulário de contato funcional;
 * Design responsivo para mobile, tablet e desktop;
 
-## Tecnologias 
-
-O projeto foi desenvolvido utilizando HTML, CSS e JavaScript puros, sem frameworks de frontend.
-Foram utilizados apenas serviços e bibliotecas externas via CDN para ícones, fontes e envio de formulário.
-As tecnologias utilizadas foram:
-
-### Linguagens:
-
-* HTML;
-* CSS;
-* JavaScript;
-
-### Serviços e recursos externos
-
-* Font Awesome;
-* Devicon;
-* Google Fonts;
-* FormSubmit;
-* Vercel;
-
-### IDE utilizada:
-
-* Visual Studio Code;
-* Live Server (Extensão);
-  
-## Aprendizados
-
-* Organização de código HTML semântico;
-* Criação de layouts responsivos com CSS puro;
-* Manipulação do DOM e eventos com JavaScript;
-* Implementação de modo escuro com persistência de estado;
-* Boas práticas de usabilidade e experiência do usuário;
-
- # Estrutura de pastas
+# Estrutura de pastas:
  
 ```
 assets/
@@ -99,10 +67,39 @@ index.html
 README.md
 ```
 
-# Contato
+# Tecnologias:
+
+## Linguagens:
+
+* HTML;
+* CSS;
+* JavaScript;
+
+## Serviços e recursos externos
+
+* Font Awesome;
+* Devicon;
+* Google Fonts;
+* FormSubmit;
+* Vercel;
+
+## IDE utilizada:
+
+* Visual Studio Code;
+* Live Server (Extensão);
+  
+# Aprendizados:
+
+* Organização de código HTML semântico;
+* Criação de layouts responsivos com CSS puro;
+* Manipulação do DOM e eventos com JavaScript;
+* Implementação de modo escuro com persistência de estado;
+* Boas práticas de usabilidade e experiência do usuário;
+
+# Contato:
 
 Você pode entrar em contato comigo por:
 
-* ![Email](https://img.icons8.com/ios-filled/24/000000/email.png) Email: devrenanrodrigues@gmail.com
+* ![Email](https://img.icons8.com/ios-filled/24/000000/email.png) Email: contato@devrenanrodrigues.com
 * ![LinkedIn](https://img.icons8.com/ios-filled/24/0077B5/linkedin.png) [LinkedIn](https://www.linkedin.com/in/devrenanrodrigues/)
 * ![WhatsApp](https://img.icons8.com/ios-filled/24/25D366/whatsapp.png) Whatsapp: (+55) 21 97633-3733
