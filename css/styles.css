@@ -35,23 +35,19 @@ header {
     max-height: 3rem;
 
 }
-
 #menu .menu-container {
     padding: 0;
 }
-
 #menu .menu-toggle {
     display: none;
     color: var(--cor-azul);
     padding: 0;
     margin-right: 2rem;
 }
-
 .menu-items {
     display: flex;
     align-items: center;
 }
-
 .buttons {
     display: flex;
 }
