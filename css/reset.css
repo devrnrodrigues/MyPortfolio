@@ -28,7 +28,7 @@ h2 {
 
 h3 {
     font-size: clamp(1.6rem, 2.2vw, 1.87rem);
-    font-weight: 400;
+    font-weight: bold;
     font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
 }
 
