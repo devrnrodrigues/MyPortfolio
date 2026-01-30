@@ -1,5 +1,5 @@
 :root {
-    --cor-azul: #8e3939;
+    --cor-azul: #dac5a7;
 }
 
 body {
@@ -69,10 +69,18 @@ header {
 }
 
 #menu .logo {
-    color: #ac3f3f;
+    background: linear-gradient(
+    to left,
+    #e6d3b1, 
+    #bfa77a  
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
     margin-right: auto;
     font-weight: bold;
-    text-shadow: -1px 1px 2px gray;
+    text-shadow: -1px 1px 2px var(--cor-azul);
 }
 .logo a{
     font-size:3rem;
@@ -106,7 +114,7 @@ header {
     left: 0;
     border-radius: 50%;
     bottom: -0.5rem;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
     transition: width 0.5s ease-in-out;
 
 }
@@ -184,6 +192,7 @@ header {
 }
 
 .icon.sun {
+    color: var(--cor-azul);
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -192,13 +201,14 @@ header {
 }
 
 .icon.clicked {
+     color: var(--cor-azul);
     transform: rotate(360deg);
 }
 
 .img-inicio {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 5.4rem;
     padding: 1rem;
     height:clamp(35rem,25vw,40rem);
     overflow: hidden;
@@ -211,12 +221,20 @@ header {
     max-width: none;
     border-radius: 25%;
     box-shadow: 0 0 10px 2px gray;
- background: linear-gradient(to left, var(--cor-azul), #460d0d);
+ background: linear-gradient(to left, var(--cor-azul), whitesmoke);
 }
 
 .back-end {
-   color:var(--cor-azul);
-     background-size: 200% 100%;
+
+  background: linear-gradient(
+    to left,
+    #e6d3b1,
+    #bfa77a  
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
     display: block;
     position: relative;
 }
@@ -230,12 +248,19 @@ header {
 }
 
 #texto-inicio h1 {
-    font-size: clamp(2.4rem, 12vw, 8rem);
-    color: var(--cor-azul);
-    background-size: 200% 100%;
-margin: 1.5rem 0;
-}
+  font-size: clamp(2.4rem, 12vw, 8rem);
+  margin: 1.5rem 0;
 
+  background: linear-gradient(
+    to left,
+    #e6d3b1, 
+    #bfa77a 
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #texto-inicio p:first-of-type {
 font-size: clamp(2.2rem, 2.5vw, 3rem);
@@ -255,13 +280,14 @@ font-size: clamp(2.2rem, 2.5vw, 3rem);
     padding: 1rem;
     border-radius: 10rem;
   background: linear-gradient(
-    270deg,
-    #6f2b2b,
-    #8e3939,
-    #b94a4a,
-    #8e3939,
-    #6f2b2b
-  );
+  270deg,
+  #7a6434, /* dourado escuro */
+  #a88c4a, /* dourado médio */
+  #dac27a, /* dourado claro */
+  #a88c4a, /* dourado médio */
+  #7a6434  /* dourado escuro */
+);
+
     background-size: 400% 400%;
     animation: waveGradient 6s ease infinite;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -322,7 +348,7 @@ font-size: clamp(2.2rem, 2.5vw, 3rem);
     align-items: center;
     justify-content: center;
     max-width: 150rem;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
 }
 
 .max-width-container {
@@ -414,6 +440,7 @@ font-size: clamp(2.2rem, 2.5vw, 3rem);
 .fa-server,
 .fa-database,
 .fa-desktop{
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
     color: var(--cor-azul);
 }
 
@@ -558,7 +585,7 @@ cursor: pointer;
     bottom: -0.3rem;
     height: 2px;
     width: 50%;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
 
 
 }
@@ -582,7 +609,7 @@ cursor: pointer;
     border-radius: 5%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
 }
 .texto-grid {
     position: absolute;
@@ -632,12 +659,12 @@ cursor: pointer;
 .deploy-grid {
     margin-right: 1.2rem;
     padding: 0.5rem 1rem;
-    border: 1px solid var(--cor-azul);
+    border: 1px solid gray;
     border-radius: 0.5rem;
     background-color: #f0f6fc; 
     text-underline-offset: 0.3rem;
     cursor: pointer;
-    color: var(--cor-azul);
+    color: black;
     transition: box-shadow 0.3s ease;
 }
 .deploy-grid:hover {
@@ -646,10 +673,10 @@ cursor: pointer;
 .codigo-grid {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: white;
+    color: black;
     text-underline-offset: 0.3rem;
     cursor: pointer;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
     transition: box-shadow 0.3s ease;
 }
 .codigo-grid:hover {
@@ -684,7 +711,7 @@ cursor: pointer;
     bottom: -0.3rem;
     height: 2px;
     width: 50%;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
 }
 
 .subtitulo-exp {
@@ -722,9 +749,6 @@ cursor: pointer;
     max-width: 50%;
     position: relative;
     padding: 0 5rem 0 5rem;
-    animation: scroll-animation 3s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
 }
 
 @keyframes scroll-animation {
@@ -761,12 +785,21 @@ justify-content: center;
 }
 
 .time-line-content h3 {
-    color: #ac3f3f;
+    background: linear-gradient(
+    to left,
+    #e6d3b1, 
+    #bfa77a  
+  );
+font-weight: bold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
 }
 time {
     font-weight: bold;
     display: inline !important;
+       font-size: clamp(1.2rem, 1.2vw, 1.4rem);
 }
 .time-line-content p {
     margin-top: 1rem;
@@ -845,7 +878,7 @@ time {
     bottom: -0.3rem;
     height: 2px;
     width: 50%;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
 }
 
 .paragrafo-sobre {
@@ -909,7 +942,7 @@ time {
     bottom: -0.3rem;
     height: 2px;
     width: 50%;
-    background: linear-gradient(to left, var(--cor-azul), #5c1f1f);
+    background: linear-gradient(to left, var(--cor-azul), whitesmoke);
 }
 
 
@@ -1054,9 +1087,7 @@ left: 5rem;
         display: none;
     }
 }
-.cem-vh {
-    min-height: 100vh;
-}
+
 .div-grid .fa-info-circle {
 display: none;
 position: absolute;
@@ -1066,6 +1097,9 @@ right: 15px;
 @media(max-width:768px){
     .div-grid .fa-info-circle {
 display: block;
+    }
+    .icones-valid {
+        display: none;
     }
 }
 

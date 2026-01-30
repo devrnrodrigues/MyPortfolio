@@ -17,24 +17,24 @@ body {
 h1 {
     font-size: clamp(2.6rem, 4vw, 3.2rem);
     font-weight: 600;
-    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-family: "Satoshi Light";
 }
 
 h2 {
     font-size: clamp(2rem, 3vw, 2.4rem);
-    font-weight: bold;
-    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+        font-weight: 400;
+    font-family: "Satoshi Light";
 }
 
 h3 {
     font-size: clamp(1.6rem, 2.2vw, 1.87rem);
-    font-weight: bold;
-    font-family: "Satoshi Light", "Satoshi Light Placeholder", sans-serif;
+    font-weight: 400;
+    font-family: "Satoshi Light";
 }
 
 p {
     font-size: clamp(1.4rem, 1.2vw, 1.6rem);
-    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-family: sans-serif;
 }
 
 li {
