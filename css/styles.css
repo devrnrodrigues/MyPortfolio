@@ -212,12 +212,13 @@ header {
 
 .back-end {
   background: linear-gradient(
-        to right,
-        #e5e5e5 0%,
-        #bfbfbf 35%,
-        #9ca3af 70%,
-        #6b7280 100%
-    );
+    to right,
+    #cbd5e1 0%,
+    #94a3b8 40%,
+    #64748b 75%,
+    #475569 100%
+);
+
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -238,12 +239,13 @@ header {
     font-size: clamp(2.4rem, 12vw, 8rem);
     margin: 1rem 0;
     background: linear-gradient(
-        to right,
-        #e5e5e5 0%,
-        #bfbfbf 35%,
-        #9ca3af 70%,
-        #6b7280 100%
-    );
+    to right,
+    #cbd5e1 0%,
+    #94a3b8 40%,
+    #64748b 75%,
+    #475569 100%
+);
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -762,8 +764,15 @@ header {
     background: linear-gradient(180deg, rgb(0, 0, 20) 0%, rgb(5, 10, 40) 100%);
 }
 
-.time-line-content h3 {
-    background: linear-gradient(to left, #e5e5e5, #9ca3af);
+.time-line-content h2 {
+ background: linear-gradient(
+    to right,
+    #cbd5e1 0%,
+    #94a3b8 40%,
+    #64748b 75%,
+    #475569 100%
+);
+
     font-weight: bold;
     -webkit-background-clip: text;
     background-clip: text;
