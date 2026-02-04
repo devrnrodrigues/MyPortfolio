@@ -70,6 +70,7 @@ header {
 }
 
 #menu .logo {
+    color:  #475569;
     background-clip: text;
     margin-right: auto;
     font-weight: bold;
@@ -114,11 +115,13 @@ header {
 
 @media (max-width: 768px) {
     #menu .menu-toggle {
+        
         display: block;
         position: relative;
     }
 
     .toggle-icon {
+        color:  #475569;
         font-size: clamp(3rem, 2vh, 5rem);
         transition: opacity 0.3s ease, transform 0.3s ease;
         position: absolute;
