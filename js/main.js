@@ -14,11 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (temaSalvo === "escuro") {
     alterarTema();
-  } else if (!temaSalvo) {
-    const prefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefereEscuro) alterarTema();
   }
 });
+
 
 function alterarTema() {
   body.classList.toggle("modo-escuro");
