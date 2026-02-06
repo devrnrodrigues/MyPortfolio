@@ -10,8 +10,7 @@ body {
 }
 
 .modo-escuro {
-    background: rgb(0, 0, 15);
-    background-image: url('../assets/img/dark-denim-3.webp');
+    background: rgb(0, 0, 20);
     color: white;
 }
 
@@ -63,14 +62,24 @@ header {
     justify-content: center;
     padding: 1rem;
     color: black;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(0.3rem);
     box-shadow: 0 0 0 0.7px #9ca3af;
     transition: box-shadow 1s ease-in-out, padding 0.5s ease-out, background-color 0.5s ease;
 }
 
 #menu .logo {
-    color:  #475569;
+      background: linear-gradient(
+    to right,
+    #cbd5e1 0%,
+    #94a3b8 40%,
+    #64748b 75%,
+    #475569 100%
+);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     background-clip: text;
     margin-right: auto;
     font-weight: bold;
@@ -86,7 +95,7 @@ header {
 }
 
 .scrolled-escuro {
-    background: rgba(0, 0, 20, 0.85);
+    background: rgba(0, 0, 20, 0.8);
     backdrop-filter: blur(0.3rem);
     color: white;
     transition: background-color 0.5s ease, padding 0.5s ease-out;
@@ -115,13 +124,13 @@ header {
 
 @media (max-width: 768px) {
     #menu .menu-toggle {
-        
+      color: gray;
+
         display: block;
         position: relative;
     }
 
     .toggle-icon {
-        color:  #475569;
         font-size: clamp(3rem, 2vh, 5rem);
         transition: opacity 0.3s ease, transform 0.3s ease;
         position: absolute;
@@ -221,8 +230,6 @@ header {
     #64748b 75%,
     #475569 100%
 );
-
-
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -290,6 +297,9 @@ header {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+
+
 
 .btn-padrao:hover {
     box-shadow: 0 0 5px #9ca3af, 0 0 10px #9ca3af, 0 0 15px #9ca3af, 0 0 30px #9ca3af;
@@ -844,7 +854,7 @@ time {
 }
 
 #sobre.sobre-noturno {
-    background-color: rgb(0, 0, 20);
+    background-color: rgb(0, 0, 15);
 }
 
 .titulo-sobre {
