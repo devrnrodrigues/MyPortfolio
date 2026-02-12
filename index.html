@@ -1,69 +1,372 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Renan Rodrigues">
-  <link rel="icon" href="assets/img/logo.png">
-  <title>Renan Rodrigues</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólo do desenvolvedor de software full stack Renan Rodrigues.">
+<link rel="icon" href="assets/img/logo.png">
+<title>Renan Rodrigues</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/devicon/devicon.min.css">
-
-
-  <link rel="stylesheet" href="css/reset.css" media="all" onload="this.media='all'">
-  <link rel="stylesheet" href="css/styles.css" media="all" onload="this.media='all'">
-
-  <noscript>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </noscript>
-
-    <script src="js/main.js" defer></script>
-    
+<link rel="stylesheet" href="/styles/styles.css">
+<script src="scripts/modals.js" defer></script>
+<script src="scripts/scripts.js" defer></script>
 </head>
-
 
 <body>
 
-  <header id="menu">
-    <nav aria-label="Menu principal">
-      <ul id="menu-principal" class="navbar">
-        <li class="logo"><a href="#inicio">RR</a></li>
-        <li style="padding: 0;">
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
-          <i class="fa-solid fa-bars toggle-icon" id="menu-icon"></i>
-          <i class="fa-solid fa-xmark toggle-icon" id="close-icon"></i>
+<header >
+<nav >
+<ul id="menu" class="navbar" >
+  <li class="logo"><a href="#" >RR</a></li>
+<li style="padding: 0;">
+  <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <span class="menu-toggle-line line1"></span>
+    <span class="menu-toggle-line line2"></span>
+    <span class="menu-toggle-line line3"></span>
+  </button>
+</li>
+
+ <li style="padding: 0;">
+ <ul class="menu-items">
+  <li><a href="#home">HOME</a></li>
+  <li><a href="#projetos">PROJETOS</a></li>
+  <li><a href="#experiencia">EXPERIENCIA</a></li>
+  <li><a href="#sobre">SOBRE</a></li>
+     <li> <button id="themeToggle" aria-label="Alternar tema"><i class="fas fa-sun icon sun" id="icon"></i></button></li>
+     </ul>
+     </li>
+     
+  </ul>
+</nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="fade-up fixed">
+    <div class="hero-square"><img src="/assets/img/img-inicio.webp" width="570" height="570" alt="Foto de Renan Rodrigues, com efeito de desmaterialização em pixels, desenvolvedor de software"></div>
+
+    <h1>Desenvolvedor<br><span>Full Stack</span></h1>
+    <p>Programar é o meu jeito de dar forma ao futuro.</p>
+   
+     <div class="container-icons-social">
+          <a class="social-icon" href="https://www.linkedin.com/in/devrenanrodrigues/" aria-label="LinkedIn de Renan Rodrigues" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a class="social-icon" href="https://github.com/devrnrodrigues/" aria-label="GitHub de Renan Rodrigues" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a class="social-icon" href="https://wa.me/5521976333733" aria-label="Whatsapp de Renan Rodrigues" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+        <a class="hero-btn" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+          target="_blank"
+          rel="noopener">FALE COMIGO</a>
+  </div>
+   </div>
+</section>
+
+
+<section class="services">
+  <div class="card fade-up fixed">
+    <span><i class="fas fa-desktop"></i></span>
+    <h2>Front End</h2>
+    <p>
+      Desenvolvimento de interfaces responsivas com <strong>React</strong> e <strong>TypeScript</strong>, com focado em usabilidade, estados de interface, clareza de interação e consumo de <strong>APIs REST.</strong></p>
+    
+  </div>
+
+  <div class="card fade-up fixed">
+    <span><i class="fas fa-server"></i></span>
+    <h2>Back End</h2>
+    <p>
+      Desenvolvimento de <strong>APIs REST</strong> com <strong>Express</strong> e <strong>TypeScript</strong>, aplicando validação de dados, tratamento de erros e organização de rotas e responsabilidades.
+      </p>
+  </div>
+
+  <div class="card fade-up fixed">
+    <span><i class="fas fa-database"></i></span>
+    <h2>Banco de Dados</h2>
+    <p>
+      Modelagem de dados relacionais e SQL com <strong>PostgreSQL</strong>, incluindo CRUD, integridade referencial, views, índices simples e funções em <strong>PL/pgSQL.</strong>
+      </p>
+  </div>
+</section>
+
+<section id="projetos" class="work ">
+  <h2>Projetos</h2>
+
+  <div class="grid">
+
+    <div class="project fade-up fixed">
+      <img src="assets/img/projeto2.webp" alt="">
+      <div class="project-bar">
+        <div class="left">
+          <h3>Portfólio</h3>
+          <span>Landing page</span>
+        </div>
+        <a href="#" class="btn-project" data-project-id="portfolio">
+          <i style="margin-right: 5px;" class="fa-solid fa-arrow-up-right-from-square"></i>Ver detalhes
+        </a>
+      </div>
+    </div>
+
+    <div class="project fade-up fixed">
+      <img src="assets/img/projeto3.webp" alt="">
+      <div class="project-bar">
+        <div class="left">
+          <h3>ListProgress</h3>
+          <span>Sistema Web</span>
+        </div>
+        <a href="#" class="btn-project" data-project-id="listprogress">
+          <i style="margin-right: 5px;" class="fa-solid fa-arrow-up-right-from-square"></i>Ver detalhes
+        </a>
+      </div>
+    </div>
+
+    <div class="project fade-up fixed">
+      <img src="assets/img/projeto4.webp" alt="">
+      <div class="project-bar">
+        <div class="left">
+          <h3>MusicAnalyser</h3>
+          <span>Análise de Dados</span>
+        </div>
+        <a href="#" class="btn-project" data-project-id="musicanalyser">
+          <i style="margin-right: 5px;" class="fa-solid fa-arrow-up-right-from-square"></i>Ver detalhes
+        </a>
+      </div>
+    </div>
+
+    <div class="project fade-up fixed">
+      <img src="assets/img/projeto1.webp" alt="">
+      <div class="project-bar">
+        <div class="left">
+          <h3>TrackGym</h3>
+          <span>Aplicativo Mobile</span>
+        </div>
+        <a href="#" class="btn-project" data-project-id="trackgym">
+          <i style="margin-right: 5px;" class="fa-solid fa-arrow-up-right-from-square"></i>Ver detalhes
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experiencia" class="process">
+  <div class="process-header fade-up fixed">
+    <span>EXPERIÊNCIA</span>
+    <h2>Aprendizados<br><em>ao longo do tempo</em></h2>
+  </div>
+
+  <div class="timeline">
+    <div class="step right fade-up" data-step="01">
+      <div class="step-box">
+        <h3>Formação .NET | SENAC</h3>
+        <time datetime="2021">Jul de 2021</time>
+        <time datetime="2022">a Jan de 2022</time>
+        <p>Curso intensivo onde obtive os primeiros conhecimentos em programação, aplicando conceitos em projetos e adquirindo boas práticas de desenvolvimento.</p>
+        <ul>
+          <li>Lógica de programação;</li>
+          <li>Desenvolvimento de aplicações web;</li>
+          <li>Versionamento de código com Git e Github;</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step left fade-up" data-step="02">
+      <div class="step-box">
+        <h3>Jovem Aprendiz Tecnologia | Stefanini IT</h3>
+        <time datetime="2022">Nov de 2022</time>
+      <time datetime="2024">a Jan de 2024</time>
+        <p>Atuei com desenvolvimento em Java, Programação Orientada a Objetos (POO) e Banco de Dados (PostgreSQL). Durante esse período, também desenvolvi conhecimentos em modelagem de dados relacionais (ER).</p>
+        <ul>
+          <li>Criei pequeno sistema financeiro em Java;</li>
+          <li>Desenvolvi APIs REST com Spring Boot;</li>
+          <li>Recebi mentoria de profissionais seniores;</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step right fade-up" data-step="03">
+      <div class="step-box">
+        <h3>Análise e Desenvolvimento de Sistemas | Estácio</h3>
+        <time datetime="2024">Jan de 2024</time>
+        <time datetime="2026">a Jun de 2026</time>
+        <p>Essa graduação tem sido essêncial para desenvolver habilidades em lógica de programação, estruturas de dados e criação de aplicações web, mobile e desktop. Busco aplicar o aprendizado em projetos práticos.</p>
+   
+      </div>
+    </div>
+
+    <div class="step left fade-up" data-step="04">
+      <div class="step-box">
+        <h3>Pós em Engenharia de Software</h3>
+        <time datetime="2026">Jun de 2026</time>
+        <time datetime="2027">a Jun de 2027</time>
+        <p>Pretendo iniciar uma pós-graduação em Engenharia de Software com foco em arquitetura de sistemas, práticas avançadas de desenvolvimento e qualidade de software, visando projetar soluções mais escaláveis, sustentáveis e alinhadas às demandas do mercado.</p>
+  
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sobre" class="about full-bg fade-up fixed">
+  <div class="about-inner">
+
+    <div class="about-photo">
+      <img src="assets/img/img-sobre.webp" alt="Foto">
+    </div>
+
+    <div class="about-text">
+      <h2>Algumas palavras <span>sobre mim</span></h2>
+
+      <p>Olá, me chamo Renan Rodrigues. Sou um desenvolvedor de software full stack e graduando em Análise e Desenvolvimento de Sistemas. </p>
+
+      <p>Busco sempre manter meu foco além da teoria; também na prática, utilizando tecnologias e ferramentas modernas para desenvolver sistemas eficientes e me manter atualizado.</p>
+
+      <p>Este portfólio reúne alguns dos projetos que desenvolvi ao longo dessa jornada e representa meu aprendizado prático e evolução técnica.</p>
+
+      <div>
+        <button class="btn">
+          <i class="fa-solid fa-download"></i> Download CV
         </button>
-        </li>
-        <li class="menu-container">
-          <ul class="menu-items">
-            <li><a class="item-menu" href="#inicio">HOME</a></li>
-            <li><a class="item-menu" href="#projetos">PROJETOS</a></li>
-            <li><a class="item-menu" href="#experiencia">EXPERIÊNCIA</a></li>
-            <li><a class="item-menu" href="#sobre">SOBRE</a></li>
-            <li><a class="item-menu" href="#contato">CONTATO</a></li>
-            <li class="buttons">
-              <button id="toggleTheme" class="botao-tema"  aria-label="Alternar tema claro e escuro">
-                <i class="fas fa-moon icon moon" id="icon"></i>
-              </button>
-            </li>
-          </ul>
-        </li>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contato" class="contact">
+  <div class="contact-grid fade-up fixed">
+
+    <div class="contact-info">
+      <h3>Aguardo o seu contato!</h3>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-location-dot"></i> Brasil, Rio de Janeiro</li>
+        <li><i class="fa-solid fa-phone"></i> +55 (21) 97633-3733</li>
+        <li><i class="fa-solid fa-envelope"></i> contato@devrenanrodrigues.com</li>
       </ul>
-    </nav>
-  </header>
-  <main>
+     <div> <a class="contact-btn" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+      target="_blank"
+      rel="noopener"
+    >
+      Fale comigo
+    </a>
+    </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-box">
+        <h4>Contato</h4>
+    
+        <form action="https://formsubmit.co/devrenanrodrigues@gmail.com" method="POST">
+          
+          <input type="text" name="_honey" style="display:none">
+    
+          <label for="nome"></label>
+          <input 
+            id="nome" 
+            type="text" 
+            name="nome" 
+            placeholder="Nome" 
+            required
+          >
+    
+          <label for="email"></label>
+          <input 
+            id="email" 
+            type="email" 
+            name="email" 
+            placeholder="Email" 
+            required
+          >
+    
+          <label for="mensagem"></label>
+          <textarea 
+            id="mensagem" 
+            name="mensagem" 
+            rows="5" 
+            placeholder="Mensagem" 
+            required
+          ></textarea>
+    
+          <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+          <input type="hidden" name="_captcha" value="false">
+    
+          <button class="btn-enviar" type="submit">
+            Enviar
+          </button>
+    
+        </form>
+      </div>
+    </div>
+    
+</div>
 
-    <div class="max-width-container">
-<div class="cem-vh">
-      <div id="inicio" class="img-inicio"><img src="assets/img/img-inicio.webp" width="570" height="570" alt="Foto de Renan Rodrigues, com efeito de desmaterialização em pixels, desenvolvedor de software"></div>
-      <section id="texto-inicio">
-        <h1>Desenvolvedor <span class="back-end" data-text="Back-End"> de <br> Software </span></h1>
-        <p> Programar é meu jeito de dar forma ao futuro.</p>
+</section>
+</main>
 
-        <div class="container-icons-social">
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-content" role="dialog" aria-modal="true">
+    <button class="modal-close" data-modal-close>
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-header" data-modal-header>
+
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-top">
+        <div class="modal-title-group">
+          <h2 data-modal-title>Titulo do Projeto</h2>
+          <span class="modal-category" data-modal-category></span>
+        </div>
+
+        <div class="modal-actions">
+          <a href="#" target="_blank" class="modal-btn" data-modal-deploy>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver projeto
+          </a>
+          <a href="#" target="_blank" class="modal-btn-outline" data-modal-code>
+            <i class="fa-brands fa-github"></i> Código
+          </a>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Visão Geral</h3>
+        <div data-modal-overview></div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Motivação</h3>
+        <div data-modal-motivation></div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Desafios do projeto</h3>
+        <div data-modal-challenges></div>
+      </div>
+
+      <div class="modal-section">
+        <h3>Tecnologias Utilizadas</h3>
+        <div data-modal-tech></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+
+
+<h4>Renan Rodrigues</h4>
+<p>Desenvolvedor Full Stack focado em TypeScript e Node.js. Aberto a oportunidades e projetos.</p>
+ <div class="container-icons-social">
           <a class="social-icon" href="https://www.linkedin.com/in/devrenanrodrigues/" aria-label="LinkedIn de Renan Rodrigues" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
@@ -77,402 +380,10 @@
           </a>
         </div>
 
-       <a href="mailto:contato@devrenanrodrigues.com?subject=Contato%20via%20portf%C3%B3lio&body=Ol%C3%A1%2C%20Renan.%0A%0AVi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA."
-  id="btn-principal" class="btn-padrao btn-principal"
-   target="_blank" rel="noopener noreferrer">
+        <p>© 2026 • Portfólio Renan</p>
 
-  <i class="fa-solid fa-arrow-up-right-from-square" style="margin-right: 1rem;"></i>
-  Fale comigo
-
-</a>
-      </section>
-      <div class="max-width-content">
-        <div class="div-icons-lang">
-
-          <div class="wrapper">
-            <div class="lista">
-              <div class="item"><i class="devicon-html5-plain" title="HTML"></i><span>HTML</span></div>
-              <div class="item"><i class="devicon-css3-plain" title="CSS"></i><span>CSS</span></div>
-              <div class="item"><i class="devicon-typescript-plain" title="Type Script"></i><span>Type Script</span>
-                
-              </div>
-              <div class="item"><i class="devicon-java-plain" title="Java"></i><span>Java</span></div>
-              <div class="item"><i class="devicon-react-original" title="React"></i><span>React</span></div>
-              <div class="item"><i class="devicon-postgresql-plain" title="PSql"></i><span>PostgreSQL</span></div>
-              <div class="item"><i class="devicon-python-plain" title="Python"></i><span>Python</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-      <section id="habilidades">
-        <div class="card-um-hab card-hab">
-          <h2><i class="fas fa-desktop" style="margin-right: 0.5rem;"></i> Frontend</h2>
-          <h3 class="subt-card">Responsividade e Usabilidade</h3>
-          <p>Base sólida em desenvolvimento de interfaces responsivas e intuitivas, com foco na experiência do usuário e conhecimento em integração com APIs. </p><a
-            role="button" class="link-modal" data-modal="modal-habilidades"><i class="fas fa-info-circle" aria-hidden="true"
-              style="margin-right: 0.5rem; font-size: 1rem;"></i>Saiba mais</a>
-        </div>
-        
-        <div class="card-dois-hab card-hab">
-          <h2><i class="fas fa-server" style="margin-right: 0.5rem;"></i>Backend </h2>
-          <h3 class="subt-card">APIs e Regras de Negócio</h3>
-          <p> Desenvolvimento de APIs, aplicando noções básicas de arquitetura, 
-            lógica de programação, validação de dados e tratamento de erros.</p><a role="button"
-            class="link-modal" data-modal="modal-habilidades2"><i class="fas fa-info-circle" aria-hidden="true"
-              style="margin-right: 0.5rem; font-size: 1rem;"></i>Saiba mais</a>          
-        </div>
-
-        <div class="card-tres-hab card-hab">
-          <h2><i class="fas fa-database" style="margin-right: 0.5rem;"></i>Banco de Dados</h2>
-          <h3 class="subt-card">Armazenamento de Dados</h3>
-          <p> Modelagem de dados e consultas SQL, com foco em organização, integridade e otimização. 
-            Conhecimento em views, índices e controle de transações.</p><a role="button"
-            class="link-modal" data-modal="modal-habilidades3"><i class="fas fa-info-circle" aria-hidden="true"
-              style="margin-right: 0.5rem; font-size: 1rem;"></i>Saiba mais</a>
-        </div>
-        
-      </section>
-
-      <div id="modal-habilidades" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-frontend">
-        <div class="modal-content">
-          <button class="close-modal" aria-label="Fechar modal">&times;</button>
-       <h2 id="titulo-modal-frontend">Frontend</h2>
-
-<p>
-Possuo base sólida no desenvolvimento de interfaces responsivas, garantindo que as aplicações se adaptem corretamente a diferentes tamanhos de tela, como desktops, tablets e dispositivos móveis.
-</p>
-
-<p>
-Desenvolvo com foco em usabilidade e interface intuitiva, aplicando boas práticas de UI/UX para melhorar a navegação, organização visual e experiência do usuário.
-</p>
-
-<p>
-Possuo noções básicas de SEO, como uso correto de tags semânticas, hierarquia de títulos e acessibilidade, visando melhor indexação e desempenho nos motores de busca.
-</p>
-
-<p>
-Realizo o consumo de APIs utilizando <strong>fetch</strong>, tratando respostas e exibindo dados dinamicamente na interface de forma clara e eficiente.
-</p>
-        </div>
-      </div>
-
-     <div id="modal-habilidades2" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-backend">
-        <div class="modal-content">
-          <button class="close-modal" aria-label="Fechar modal">&times;</button>
-        <h2 id="titulo-modal-backend"> Backend </h2>
-        <p>
-Tenho noções em lógica de programação, utilizando variáveis, operadores, estruturas condicionais, laços de repetição, contadores e algoritmos para resolver problemas de forma eficiente.
-</p>
-
-<p>
-Entendo o conceito de arquitetura de aplicações seguindo padrões como <strong>Controllers, Services, Repositories, Middlewares e Routes</strong>, promovendo organização, manutenibilidade e escalabilidade do código.
-</p>
-
-<p>
-Desenvolvo APIs RESTful utilizando comunicação via HTTP, troca de dados em formato JSON, aplicando validação de dados, tratamento de erros e boas práticas de segurança.
-</p>
-
-<p>
-Tenho conhecimento em autenticação utilizando <strong>JWT</strong>, além de noções de performance, escalabilidade, estrutura de dados e paradigmas da Programação Orientada a Objetos (POO).
-</p>
-
-<p>
-Utilizo versionamento de código com Git, aplicando conceitos como <strong>branches, commits, merge, pull, stage, diff, log</strong> e noções básicas de rebase.
-</p>
-
-        </div>
-      </div>
- 
-     <div id="modal-habilidades3">
-        <div class="modal-content">
-          <button class="close-modal" aria-label="Fechar modal">&times;</button>
-        <h2> Banco de Dados </h2>
-        <p>
-Tenho conhecimento em modelagem de banco de dados relacional, utilizando conceitos como <strong>Primary Key, Foreign Key, UNIQUE, índices</strong> e relacionamentos (1:1, 1:N, N:N).
-</p>
-
-<p>
-Sei realizar consultas SQL como <strong>SELECT, INSERT, CREATE, ALTER, DELETE e DROP</strong>, além do uso de <strong>JOINs, Views, Stored Procedures, Trigger Functions</strong> e controle de transações com rollback.
-</p>
-<p>
-Tenho atenção à integridade e organização dos dados, aplicando boas práticas de normalização, uso adequado de índices para otimização de consultas e cuidado com consistência das informações.
-</p>
-       </div>
-      </div>
-  
-
-    <div id="projetos" class="container-projetos">
-      <h2 class="titulo-projetos">Projetos</h2>
-      <p class="subtitulo-projetos  ">Alguns dos meus principais projetos:</p>
-    </div>
-
-     <div id="grid-projetos">
-
-      <article class="div-grid">
-        <i class="fa fa-info-circle"></i>
-        <img src="assets/img/projeto2.webp" width="1080" height="1080" alt="Mockup com imagens do meu portfólio em dispositivos diferentes." loading="lazy">
-        <div class="texto-grid">
-          <h2 class="titulo-grid">Portfólio <i class="devicon-html5-plain" title="HTML"></i> <i
-              class="devicon-css3-plain" title="CSS"></i> <i class="devicon-javascript-plain" title="Java Script"></i>
-          </h2>
-          <p class="paragrafo-grid">Projeto web responsivo desenvolvido para apresentar minhas habilidades, experiências e projetos de forma clara e organizada. </p>
-          <div>
-            <a href="#inicio" class="deploy-grid"><i class="fa-solid fa-arrow-up"
-                style="margin-right: 0.5rem;"></i>Projeto atual</a>
-            <a href="https://github.com/rngrodrigues/MyPortfolio" target="_blank" class="codigo-grid"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Código</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="div-grid">
-        <i class="fa fa-info-circle"></i>
-        <img src="assets/img/projeto3.webp" width="1024" height="1280" alt="Mockup com sistema web ListProgress em React, em desktop e mobile." loading="lazy">
-        <div class="texto-grid">
-          <h2 class="titulo-grid">ListProgress 
-            <i class="devicon-express-original-wordmark" title="Express" style="font-size: clamp(3rem, 2.5vw, 5rem); font-weight: bold;"></i>
-            <i class="devicon-postgresql-plain" title="PostgreSQL"></i> <i
-              class="devicon-react-plain" title="React"></i> <i class="devicon-typescript-plain" title="TypeScript"></i></h2>
-          <p class="paragrafo-grid">Sistema web para gestão e acompanhamento de metas, com organização em cards e tarefas personalizáveis, focado em produtividade.</p>
-          <div>
-            <a href="https://listprogress.vercel.app/" target="_blank" class="deploy-grid"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Ver ListProgress</a>
-            <a href="https://github.com/devrnrodrigues/ListProgress" target="_blank" class="codigo-grid"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Código</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="div-grid">
-        <i class="fa fa-info-circle"></i>
-        <img src="assets/img/projeto4.webp" width="1080" height="1080" alt="Mockup com o aplicativo desktop do Music Analyser." loading="lazy">
-        <div class="texto-grid">
-          <h2 class="titulo-grid">Music Analyser  
-            <i class="devicon-python-plain" title="Python"></i> 
-              <i class="devicon-pandas-plain" title="Pandas"></i>
-            <i class="devicon-duckdb-plain" title="DuckDB"></i> 
-          </h2>
-          <p class="paragrafo-grid">Aplicação de Big Data para processamento de dados musicais, realizando limpeza, transformação e visualização dos resultados por meio de gráficos.</p>
-          <div>
-            <a href="https://musicanalyser.vercel.app/" target="_blank" class="deploy-grid"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Ver MusicAnalyser</a>
-            <a href="https://github.com/devrnrodrigues/MusicAnalyser" target="_blank" class="codigo-grid"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Código</a>
-          </div>
-        </div>
-    </article>
-
-    <article class="div-grid">
-        <i class="fa fa-info-circle"></i>
-        <img src="assets/img/projeto1.webp" width="1080" height="1080" alt="Mockup com aplicativo de treino em React Native." loading="lazy">
-        <div class="texto-grid">
-          <h2 class="titulo-grid">TrackGym<i class="devicon-react-plain" title="React Native"></i> 
-            <i
-              class="devicon-expo-plain" title="Expo"></i>
-                <i
-              class="devicon-sqlite-plain" title="SQLite"></i>
-              <i class="devicon-typescript-plain" title="TypeScript"></i></h2>
-          <p class="paragrafo-grid">Ainda está em construção...</p>
-          <div>
-            <a href="https://github.com/devrnrodrigues/TrackGym" target="_blank" class="deploy-grid" style="cursor:default; color:white; background-color: gray; border: none;"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Em construção...</a>
-            <a href="https://github.com/devrnrodrigues/TrackGym" target="_blank" class="codigo-grid"><i class="fa-solid fa-arrow-up-right-from-square"
-                style="margin-right: 0.5rem;"></i>Código</a>
-          </div>
-        </div>
-      </article>
-
-</div>
-
-    <div class="container-exp">
-      <h2 id="experiencia" class="titulo-exp">EXPERIÊNCIA</h2>
-      <h3 class="subtitulo-exp">Aprendizados ao longo do tempo</h3>
-      <p class="paragrafo-exp">Um pouco das minhas vivências, conhecimentos e contato com programação.</p>
-    </div>
-    <section class="time-line">
-      <div class="container-time-line">
-        <div class="time-line-content">
-          <h2>
-            Formação .NET (SENAC)
-     
-          </h2>
-          <time datetime="2021">Jul de 2021 </time> <time datetime="2022">a Jan de 2022</time>
-          <p>Curso profissionalizante intensivo de seis meses que forneceu a minha primeira base prática e teórica em 
-            programação. Essa formação foi o ponto de partida para minha entrada no mercado de trabalho.</p>
-        </div>
-      </div>
-      <div class="container-time-line">
-        <div class="time-line-content">
-          <h2> Aprendiz Tecnologia (Stefanini IT) </h2>
-          <time datetime="2022">Nov de 2022 </time> <time datetime="2024">a Jan de 2024</time>
-          <p>
-Primeira experiência profissional, com mais de 1 ano,
- me proporcionou aprendizados em Java, POO e Banco de Dados. 
-Destaco também meus aprendizados em modelagem de dados relacionais (ER/DER).</p>
-        </div>
-      </div>
-      <div class="container-time-line">
-        <div class="time-line-content">
-          <h2> Análise e Desenvolvimento de Sistemas (Estácio)
-
-          </h2>
-          <time datetime="2024">Mar de 2024 </time><time datetime="2026">a Dez de 2026</time>
-          <p>Atualmente curso ADS, adquirindo conhecimentos em programação, estrutura de dados e desenvolvimento web, mobile e desktop. 
-            Busco aplicar esses conhecimentos em projetos práticos para evoluir na área de desenvolvimento de softwares. </p>      
-        </div>
-      </div>
-      <div class="container-time-line">
-        <div class="time-line-content">
-          <h2>
-            Pós-graduação Engenharia de Software
-
-          </h2>
-          <time datetime="2026"> Jun de 2026</time><time datetime="2027">a Jun de 2027</time>
-          <p>Pretendo iniciar a pós-graduação em Engenharia de Software com foco no aprofundamento em arquitetura de sistemas, 
-            boas práticas de desenvolvimento e qualidade de software.
-</p>
-
-        </div>
-      </div>
-    </section>
-</div>
-    <section id="sobre">
-      <div class="sobre-flex">
-        <div id="img-sobre"><img src="assets/img/img-sobre.webp" width="720" height="720" alt="Imagem de rosto do Renan Rodrigues de frente." loading="lazy"></div>
-        <div class="conteudo-sobre">
-          <h2 class="titulo-sobre">Algumas palavras sobre mim</h2>
-
-<p class="paragrafo-sobre">
- Olá, me chamo Renan Rodrigues. Sou entusiasta de tecnologia e graduando em Análise e Desenvolvimento de Sistemas. 
-  Atualmente estou totalmente focado nos estudos diários, na área de Engenharia de Software.
-</p>
-
-<p class="paragrafo-sobre">
-  Busco sempre manter meu foco além da teoria; também na prática, utilizo tecnologias e ferramentas modernas
-  para desenvolver sistemas eficientes e bem estruturados.
-</p>
-
-<p class="paragrafo-sobre">
- Busco oportunidade em Desenvolvimento de Software e planejo iniciar uma pós-graduação em Engenharia de Software após concluir meu curso atual
-</p>
-         <div class="btn-download-cv">
-  <a href="assets/curriculo/devrenanrodrigues.pdf"
-     download
-    >
-     
-    <i class="fa fa-download" style="margin-right: 1rem;"></i>
-    Download CV
-  </a>
-</div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contato">
-      <div class="container-contato">
-        <h2 class="titulo-container-ctt">AGUARDO O SEU CONTATO!</h2>
-        <p class="infos-container-ctt"><i class="fas fa-map-marker-alt"></i> Brasil, Rio de Janeiro</p>
-        <p class="infos-container-ctt"><i class="fas fa-phone-alt"></i> +55 (21) 97633-3733</p>
-        <p class="infos-container-ctt"><i class="fas fa-envelope"></i> contato@devrenanrodrigues.com</p>
-        <div class="div-btn-ctt"><a href="mailto:contato@devrenanrodrigues.com?subject=Contato%20via%20portf%C3%B3lio&body=Ol%C3%A1%2C%20Renan.%0A%0AVi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA."
-   class="btn-padrao"
-   target="_blank" rel="noopener noreferrer">
-
-  <i class="fa-solid fa-arrow-up-right-from-square" style="margin-right: 1rem;"></i>
-  Fale comigo
-
-</a></div>
-      </div>
-      <div class="card-contato">
-  <h2 class="titulo-card-ctt">Contato</h2>
-
-  <form action="https://formsubmit.co/devrenanrodrigues@gmail.com" method="POST">
-    <label for="nome"></label>
-    <input id="nome" type="text" name="nome" placeholder="Nome" required>
-    <label for="email"></label>
-    <input id="email" type="email" name="email" placeholder="Email" required>
-    <label for="mensagem"></label>
-    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-
-    <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
-    <input type="hidden" name="_captcha" value="false">
-
-    <button class="btn-enviar" type="submit">Enviar</button>
-  </form>
-</div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="max-width-container footer-container">
-      <section class="renan-rodrigues">
-        <div>
-          <h3 class="title-footer">Renan Rodrigues</h3>
-          <p>Em busca de uma oportunidade em desenvolvimento de software para aplicar 
-             expandir meus
-            conhecimentos.</p>
-          <div>
-            <a class="social-icon" aria-label="LinkedIn de Renan Rodrigues" href="https://www.linkedin.com/in/devrenanrodrigues/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a class="social-icon" aria-label="Github de Renan Rodrigues" href="https://github.com/devrnrodrigues" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a class="social-icon" aria-label="Whatsappp de Renan Rodrigues" href="https://wa.me/5521976333733" target="_blank">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+</footer>
 
 
-
-      <section class="conectar">
-        <div>
-          <h3 class="title-footer">Projetos</h3>
-          <a href="#inicio">Meu Portfólio</a>
-          <a href="https://listprogress.vercel.app/" target="_blank">List Progress</a>
-          <a href="https://musicanalyser.vercel.app/">Music Analyser</a>
-          <a href="#">Em breve...</a>
-        </div>
-      </section>
-
-    </div> 
-  
-
-  
-      <div class="direitos-reservados">
-        <div class="icones-valid">
-        <p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-        <img style="border:0;width:60px;height:21px;"
-            src="assets/img/vcss.webp"
-            alt="CSS válido!">
-    </a>
-</p>
-      
-        <p>
-  <a href="https://validator.w3.org/check?uri=referer" target="_blank">
-    <img style="border:0;width:60px;height:21px;"
-    width="780"
-    height="331"
-         src="assets/img/valid-html500.webp"
-         alt="HTML válido!">
-  </a>
-</p>
-</div>
-
-<p> © 2026 Renan Rodrigues. Todos os direitos reservados. </p>
-
-
-</div>
-
- 
-  </footer>
 </body>
 </html>
