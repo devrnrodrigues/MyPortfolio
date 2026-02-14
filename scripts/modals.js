@@ -103,11 +103,11 @@ const projects = {
     `,
     tech: `
       <ul>
-        <li><b>Python</b>Linguagem principal do projeto, utilizada para orquestrar o processamento de dados, a lógica da aplicação e a interface gráfica.</li>
-        <li><b>Pandas</b>Responsável pela manipulação inicial dos dados, validação, limpeza e preparação para análise.</li>
-        <li><b>DuckDB</b>Utilizado para execução de consultas analíticas eficientes, com suporte a processamento em disco, window functions e alto desempenho em grandes volumes de dados.</li>
-        <li><b>Matplotlib</b>Empregado na geração de gráficos horizontais claros e objetivos, facilitando a interpretação dos resultados.</li>
-        <li><b>Tkinter/TkinterDnD2</b>Frameworks usados para construção da interface gráfica desktop, incluindo suporte a drag and drop, modais informativos e barra de progresso.</li>
+        <li><b>Python</b> Linguagem principal do projeto, utilizada para orquestrar o processamento de dados, a lógica da aplicação e a interface gráfica.</li>
+        <li><b>Pandas</b> Responsável pela manipulação inicial dos dados, validação, limpeza e preparação para análise.</li>
+        <li><b>DuckDB</b> Utilizado para execução de consultas analíticas eficientes, com suporte a processamento em disco, window functions e alto desempenho em grandes volumes de dados.</li>
+        <li><b>Matplotlib</b> Empregado na geração de gráficos horizontais claros e objetivos, facilitando a interpretação dos resultados.</li>
+        <li><b>Tkinter/TkinterDnD2</b> Frameworks usados para construção da interface gráfica desktop, incluindo suporte a drag and drop, modais informativos e barra de progresso.</li>
         
       </ul>
     `,

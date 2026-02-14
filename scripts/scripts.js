@@ -33,6 +33,11 @@ document.addEventListener("click", (event) => {
   }
 });
 
+
+menuItems.querySelectorAll("a, button").forEach((item) => {
+  item.addEventListener("click", closeMenu);
+});
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 2) {
     menu.classList.add("scrolled");
@@ -114,7 +119,6 @@ window.addEventListener("scroll", () => {
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 120;
-    const sectionHeight = section.offsetHeight;
 
     if (window.scrollY >= sectionTop) {
       current = section.getAttribute("id");

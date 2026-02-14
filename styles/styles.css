@@ -2,7 +2,7 @@
   font-size: 1.875rem;
    padding: 0.1rem;
    display: inline-block;
-   transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .social-icon:hover{
    scale: 1.1;
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track {
   --gold-soft:#9f8e74;
   --text:#e6e6e6;
   --muted:#b4b4b4;
-  --menu:rgba(0, 0, 0, 0.6);
+  --menu:rgba(0, 0, 0, 0.85);
   --border:rgba(255,255,255,.08);
 }
 
@@ -228,13 +228,10 @@ border-top: 1px solid var(--border);
 border-bottom: 1px solid var(--border);
 border-left: none;
 border-right: none;
-
 }
-
     .menu-toggle {
         display: block;
     }
-
     .menu-items {
     padding: 0;
     margin:0;
@@ -246,7 +243,7 @@ border-right: none;
         background: var(--menu);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease;;
+        transition: max-height 0.5s ease;
     }
 
     .menu-items.active {
