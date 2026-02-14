@@ -838,7 +838,7 @@ background-color: var(--gold);
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: transform 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 .fade-up.in-view {
