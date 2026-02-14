@@ -18,12 +18,12 @@ const projects = {
     deployUrl: "#",
     codeUrl: "https://github.com/devrnrodrigues/MyPortfolio",
     overview: `
-      <p>Este projeto consiste no meu portfólio pessoal, desenvolvido como uma landing page moderna, objetiva e totalmente responsiva, com o objetivo de centralizar minhas principais informações profissionais em um único lugar. O site apresenta meus projetos, habilidades técnicas, experiência profissional e formas de contato, funcionando como um cartão de visitas digital para recrutadores e parceiros.</p>
+      <p>Este projeto é o meu portfólio pessoal, desenvolvido como uma landing page moderna, objetiva e totalmente responsiva, com o objetivo de centralizar minhas principais informações profissionais em um único lugar. O site apresenta meus projetos, habilidades técnicas, experiência profissional e formas de contato.</p>
       <p>O foco do projeto foi criar uma interface clara, fluida e acessível, priorizando usabilidade, organização visual e boa experiência do usuário em diferentes dispositivos.</p>
       `,
     motivation: `
-      <p>A motivação principal foi a necessidade de ter um espaço próprio para apresentar meu trabalho de forma profissional e controlada, sem depender exclusivamente de plataformas externas. Além disso, o projeto serviu como um exercício prático para consolidar fundamentos do desenvolvimento web, especialmente em HTML semântico, CSS responsivo e JavaScript para interações dinâmicas.</p>
-      <p>Durante o desenvolvimento, busquei aplicar boas práticas de estruturação de código, organização de arquivos e foco em experiência do usuário, criando um site simples, mas funcional e bem acabado.</p>
+      <p>A idéia surgiu da necessidade de ter um espaço próprio para apresentar meu trabalho de forma profissional, sem depender exclusivamente de plataformas externas. Além disso, o projeto serviu como um exercício prático para aprender fundamentos do desenvolvimento web, especialmente em HTML semântico, CSS responsivo e JavaScript para interações dinâmicas.</p>
+      <p>Durante o desenvolvimento, busquei aplicar boas práticas de estruturação de código, organização de arquivos e foco em experiência do usuário.</p>
     `,
     challenges: `
     <p>Mesmo sendo um projeto mais simples, alguns pontos exigiram atenção técnica e decisões conscientes:</p>
@@ -32,7 +32,7 @@ const projects = {
         <li>Implementação de modo escuro com persistência no localStorage, mantendo a preferência do usuário;</li>
         <li>Organização visual de conteúdos extensos, como experiências e habilidades, sem poluir a interface;</li>
         <li>Uso de JavaScript para interações e animações, sem comprometer performance ou acessibilidade;</li>
-        <li>Manutenção de uma estrutura simples, evitando frameworks para reforçar domínio dos fundamentos</li>
+        <li>Manutenção de uma estrutura simples, evitando frameworks para reforçar domínio dos fundamentos;</li>
       </ul>
     `,
     tech: `
@@ -54,16 +54,16 @@ const projects = {
       <p>A aplicação possui autenticação de usuários, isolamento total de dados e um fluxo completo de CRUD tanto para cards quanto para tarefas. O sistema foi pensado para ser simples de usar, mas tecnicamente bem estruturado, aplicando conceitos de arquitetura em camadas, separação de responsabilidades e boas práticas de segurança no frontend e backend.</p>
     `,
     motivation: `
-      <p>O projeto surgiu da necessidade pessoal de organizar meus estudos de forma mais clara e visual, permitindo acompanhar a evolução ao longo do tempo sem depender de ferramentas genéricas ou excessivamente complexas.</p>
- 
-    `,
+      <p>O projeto surgiu da minha necessidade de organizar meus estudos de forma mais clara, além de poder medir meu progresso de forma visual, permitindo acompanhar a minha evolução ao longo do tempo sem depender de ferramentas genéricas ou muito complexas.</p>
+ <p>Apesar da minha principal motivação pra criar esse projeto fosse pra organização pessoal dos estudos, o ListProgress também pode ser útil para outras pessoas que buscam organizar suas metas e tarefas.</p>  
+ `,
     challenges: `
     <p>Durante o desenvolvimento, alguns pontos exigiram decisões técnicas mais cuidadosas e ajustes de arquitetura:</p>
       <ul>
         <li>Implementação de autenticação com JWT, garantindo segurança, expiração de token e proteção de rotas no backend e frontend;</li>
         <li>Isolamento de dados por usuário, evitando qualquer acesso indevido entre contas;</li>
-        <li>Organização da aplicação em camadas, evitando acoplamento excessivo entre UI, regras de negócio e persistência;</li>
-        <li>Criação de um modo demo, permitindo navegação sem login sem comprometer a lógica principal do sistema.</li>
+        <li>Organização do backend em camadas, evitando acoplamento excessivo entre UI, regras de negócio e persistência;</li>
+        <li>Criação de um modo demo, permitindo navegação sem login (localStorage) sem comprometer a lógica principal do sistema.</li>
         </ul>
     `,
     tech: `
@@ -88,10 +88,10 @@ const projects = {
     `,
     motivation: `
       <p>A motivação do projeto foi aplicar, na prática, conceitos relacionados à análise de dados, Big Data e otimização de processamento, utilizando Python como linguagem principal. O objetivo não foi apenas analisar dados, mas transformar grandes volumes de informações brutas em insights compreensíveis, acessíveis inclusive para usuários não técnicos.</p>
-      <p>Durante o desenvolvimento, o projeto serviu para aprofundar conhecimentos em manipulação de dados, consultas analíticas, organização modular de código e construção de interfaces desktop voltadas à experiência do usuário.</p>
+      <p>Durante o desenvolvimento, o projeto serviu para aprofundar conhecimentos em manipulação de dados, consultas analíticas, organização modular de código e construção de interfaces desktop.</p>
     `,
     challenges: `
-    <p>Este projeto apresentou desafios técnicos mais avançados, especialmente relacionados à escala e eficiência do processamento:</p>
+    <p>Este projeto apresentou desafios técnicos mais avançados, especialmente relacionados à eficiência do processamento:</p>
     
       <ul>
         <li>Processamento de grandes datasets sem carregar tudo em memória, utilizando DuckDB com leitura em streaming;</li>
@@ -114,7 +114,7 @@ const projects = {
   },
   trackgym: {
     header: "Em construção...",
-    title: "Projeto TrackGym",
+    title: "Projeto TrackGym (EM CONSTRUÇÃO...)",
     category: "React Native | TypeScript | Expo | Node.js | SQLite",
     deployUrl: "#",
     codeUrl: "https://github.com/devrnrodrigues/trackgym",
