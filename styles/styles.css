@@ -1,12 +1,13 @@
 .social-icon {
   font-size: 1.875rem;
-   padding: 0.1rem;
-   display: inline-block;
-    transition: all 0.5s ease;
+  padding: 0.1rem;
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.5s ease;
 }
-.social-icon:hover{
-   scale: 1.1;
-   color:var( --gold);
+
+.social-icon:hover {
+  transform: scale(1.1);
+  color: var(--gold);
 }
 
 body::-webkit-scrollbar {
@@ -136,7 +137,7 @@ font-weight: bold;
 }
 .menu-items li a {
   position: relative;
-  transition: all 0.8s ease;
+  transition: color 0.5s ease;
 }
 
 .menu-items li a:hover {
@@ -150,7 +151,7 @@ color:var(--gold);
   width: 0%;
   height: 1px;
   background: var(--gold);
-  transition: all 0.3s ease;
+  transition: width 0.3s ease;
   transform: translateX(-50%);
 }
 .menu-items li a.active {
@@ -327,7 +328,7 @@ font-size: clamp(3.25rem, 5vw, 4rem);
   color:var(--gold);
   padding:18px 32px;
   cursor:pointer;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 .container-icons-social {
   margin: 20px;
@@ -390,7 +391,7 @@ font-size: clamp(3.25rem, 5vw, 4rem);
   gap:30px;
 }
 .fa-arrow-up-right-from-square {
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .detalhes:hover ~ .btn-project i,
@@ -674,7 +675,7 @@ main {
   border: 1px solid var(--gold);
   color: var(--gold);
   background: transparent;
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease;
   cursor: pointer;
 }
 
@@ -782,7 +783,7 @@ background-color: var(--gold);
   border:1px solid var(--gold);
   color:var(--gold);
   cursor:pointer;
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .form-box button:hover{
@@ -837,7 +838,7 @@ background-color: var(--gold);
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 1s ease;
+  transition: transform 1s ease;
 }
 
 .fade-up.in-view {
