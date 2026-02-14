@@ -15,7 +15,7 @@ const projects = {
     header: "Meu Portfólio",
     title: "Renan Rodrigues - Portfólio Pessoal",
     category: "HTML | CSS | JavaScript",
-    deployUrl: "https://www.devrenanrodrigues.com/",
+    deployUrl: "#",
     codeUrl: "https://github.com/devrnrodrigues/MyPortfolio",
     overview: `
       <p>Este projeto consiste no meu portfólio pessoal, desenvolvido como uma landing page moderna, objetiva e totalmente responsiva, com o objetivo de centralizar minhas principais informações profissionais em um único lugar. O site apresenta meus projetos, habilidades técnicas, experiência profissional e formas de contato, funcionando como um cartão de visitas digital para recrutadores e parceiros.</p>
