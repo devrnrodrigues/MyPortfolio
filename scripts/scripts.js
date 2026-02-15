@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
     menu.classList.remove("scrolled");
     header.style.borderBottom = "1px solid var(--border)";
   }
-});
+}, { passive: true });
 
 function updateIcon() {
   if (body.classList.contains("light")) {
@@ -114,50 +114,47 @@ document.querySelectorAll(".project").forEach((p) => {
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".menu-items a");
 
-window.addEventListener("scroll", () => {
+function updateNavActive() {
   let current = "";
-
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 120;
-
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
+    if (window.scrollY >= sectionTop) current = section.getAttribute("id");
   });
-
   navLinks.forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
+    if (link.getAttribute("href") === `#${current}`) link.classList.add("active");
   });
-});
+}
+
+let scrollScheduled = false;
+function onScroll() {
+  if (scrollScheduled) return;
+  scrollScheduled = true;
+  requestAnimationFrame(() => {
+    updateNavActive();
+    handleScroll();
+    scrollScheduled = false;
+  });
+}
+
+window.addEventListener("scroll", onScroll, { passive: true });
 
 const fadeUpItems = document.querySelectorAll('.fade-up');
 const visibilityThreshold = 0.4;
 
 function handleScroll() {
   fadeUpItems.forEach((item) => {
-
-    if (item.classList.contains('fixed') && item.classList.contains('in-view')) {
-      return;
-    }
+    if (item.classList.contains('fixed') && item.classList.contains('in-view')) return;
 
     const rect = item.getBoundingClientRect();
     const itemHeight = rect.height;
-
-    const visibleHeight = Math.max(
-      0,
-      Math.min(window.innerHeight, rect.bottom) - Math.max(0, rect.top)
-    );
-
+    const visibleHeight = Math.max(0, Math.min(window.innerHeight, rect.bottom) - Math.max(0, rect.top));
     const isVisible = visibleHeight / itemHeight >= visibilityThreshold;
 
     if (isVisible) {
       item.classList.add('in-view');
       item.classList.remove('out-of-view');
     } else {
-
       if (!item.classList.contains('fixed')) {
         item.classList.remove('in-view');
         item.classList.add('out-of-view');
@@ -165,7 +162,6 @@ function handleScroll() {
     }
   });
 }
-window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', () => {
   window.scrollTo(0, 1);
   setTimeout(() => {
