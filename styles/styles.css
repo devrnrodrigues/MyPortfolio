@@ -275,7 +275,7 @@ border-right: none;
 }
 
 .hero{
-  min-height: 90dvh;
+  min-height: 100dvh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -908,7 +908,6 @@ background-color: var(--gold);
   transform:translateY(40px);
   transition:.4s;
   position:relative;
-  max-height:100vh;
   display:flex;
   flex-direction:column;
 }
