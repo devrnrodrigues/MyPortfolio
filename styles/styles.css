@@ -908,7 +908,7 @@ background-color: var(--gold);
   transform:translateY(40px);
   transition:.4s;
   position:relative;
-  max-height:90vh;
+  max-height:100vh;
   display:flex;
   flex-direction:column;
 }
