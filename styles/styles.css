@@ -906,6 +906,7 @@ background-color: var(--gold);
   border-radius:20px;
   overflow:hidden;
   transform:translateY(40px);
+  max-height:90vh;
   transition:.4s;
   position:relative;
   display:flex;
