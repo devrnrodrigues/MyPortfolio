@@ -349,7 +349,8 @@ font-size: clamp(3.25rem, 5vw, 4rem);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 .container-icons-social {
-  margin: 20px 0 60px 0;
+  margin: 20px;
+  margin-bottom: clamp(20px, 2vw, 60px);
 }
 
 .hero-btn:hover {
