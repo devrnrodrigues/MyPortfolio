@@ -298,8 +298,8 @@ border-right: none;
 
 
 .hero-square{
-max-width: clamp(330px, 25vw, 380px);
-max-height: clamp(330px, 25vw, 380px);
+max-width: clamp(330px, 25vw, 400px);
+max-height: clamp(330px, 25vw, 400px);
 
   margin: 0 auto 40px;
    background: linear-gradient(
@@ -337,6 +337,9 @@ font-size: clamp(3.25rem, 5vw, 4rem);
 }
 
 .hero-btn {
+  display: block;
+  max-width: 167px;
+  margin: 0 auto;
   font-weight: bold;
   background:none;
   border:1px solid var(--gold);
@@ -346,7 +349,7 @@ font-size: clamp(3.25rem, 5vw, 4rem);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 .container-icons-social {
-  margin: 20px;
+  margin: 20px 0 60px 0;
 }
 
 .hero-btn:hover {
