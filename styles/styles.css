@@ -1018,7 +1018,9 @@ background-color: var(--gold);
   font-family:'Playfair Display', serif;
   font-weight:600;
   color:var(--gold);
+  margin-bottom: 2rem;
 }
+
 .modal-section h4{
   font-family:'Playfair Display', serif;
   font-weight:normal;
